@@ -23,3 +23,6 @@ Route::get('/', function () {
 });
 
 Route::get('/produtos', 'ProdutoController@listar');
+Route::get('/produtos/mostrar/{id}', 'ProdutoController@mostrar');
+Route::get('/produtos/novo', 'ProdutoController@novo');
+Route::post('/produtos/add', 'ProdutoController@add');
