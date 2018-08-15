@@ -21,3 +21,5 @@ Route::get('/', function () {
 Route::get('/', function () {
     return 'Frase 1';
 });
+
+Route::get('/produtos', 'ProdutoController@listar');
